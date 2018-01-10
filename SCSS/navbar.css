@@ -1,0 +1,102 @@
+/* line 4, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar-inverse {
+  background-color: transparent !important; }
+  /* line 6, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse li a, .navbar-inverse .navbar-brand {
+    color: black !important;
+    letter-spacing: 1px; }
+  /* line 13, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse .navbar-collapse {
+    height: 460px; }
+
+/* line 18, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar-inverse .navbar-nav li > a {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
+  color: #333;
+  text-decoration: none;
+  z-index: 1; }
+  /* line 28, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse .navbar-nav li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.35s ease-in-out; }
+  /* line 40, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse .navbar-nav li > a:hover:before, .navbar-inverse .navbar-nav li > a:focus:before {
+    visibility: visible;
+    background-color: black;
+    /* NEED THIS THERE TO SHOW LINE HAHA */
+    transform: scaleX(1); }
+  /* line 46, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse .navbar-nav li > a:hover {
+    text-decoration: none; }
+
+/* line 51, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar-toggle {
+  background-color: transparent !important; }
+  /* line 55, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-toggle:hover {
+    background-color: transparent !important; }
+  /* line 59, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-toggle .icon-bar {
+    background-color: black !important; }
+
+/* line 64, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+li.active a {
+  background-color: transparent !important;
+  border-bottom: 2px solid black !important; }
+
+/* line 69, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+  border: none !important; }
+
+/* line 76, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #404040 !important;
+  color: white !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+  /* line 86, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .affix li a, .affix .navbar-brand {
+    color: white !important; }
+  /* line 90, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .affix .navbar-toggle {
+    border: 1px solid white !important; }
+    /* line 92, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+    .affix .navbar-toggle .icon-bar {
+      background-color: white !important; }
+  /* line 97, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .affix li.active a {
+    background-color: transparent !important;
+    border-bottom: 3px solid #1affc6 !important;
+    margin-bottom: 1px; }
+
+/* line 104, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix a {
+  padding: 15px !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+/* line 110, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix-top a {
+  padding: 25px !important; }
+
+/* line 114, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix + .container-fluid {
+  padding-top: 400px; }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,243 @@
+/* line 4, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif !important; }
+
+/* line 11, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.bg-img1 {
+  margin-top: -20px;
+  min-height: 100%;
+  background: url("../Images/access-1866817_1920.jpg");
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 26, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+#header, #cursor {
+  display: inline-block; }
+
+/* line 30, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+#cursor {
+  font-size: 50px; }
+
+/* line 34, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.header {
+  color: black !important;
+  font-size: 55px;
+  display: block;
+  margin-top: 40vh; }
+
+/* line 41, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.learn-more-button {
+  color: black;
+  width: auto;
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  -webkit-transition: all 0.55s;
+  transition: all 0.55s; }
+  /* line 51, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .learn-more-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.55s;
+    transition: 0.55s; }
+  /* line 59, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .learn-more-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.55s;
+    transition: 0.55s; }
+  /* line 69, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .learn-more-button:hover span {
+    color: black;
+    padding-right: 25px; }
+  /* line 74, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .learn-more-button:hover span:after {
+    color: black;
+    opacity: 1;
+    right: 0; }
+
+/* line 81, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.info {
+  margin: 3% 0 3% 0; }
+  /* line 83, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info p {
+    font-size: 18px; }
+  /* line 87, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info hr {
+    border: 1px dotted lightgray; }
+  /* line 91, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info .row img {
+    margin-right: 15px !important; }
+  /* line 95, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info .logo {
+    font-size: 40px; }
+  /* line 99, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info .thumbnail-text {
+    font-size: 18px; }
+  /* line 103, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .info .design {
+    background-color: #f2f2f2; }
+
+/* line 108, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.banner {
+  background: url("../Images/circuit-banner.jpg");
+  height: 300px; }
+  /* line 112, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .banner .banner-header {
+    color: white;
+    margin-top: 75px; }
+
+/* line 118, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.about {
+  margin-top: 3%; }
+  /* line 121, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .about .col-md-9 p {
+    font-size: 18px;
+    text-align: justify; }
+
+/* line 128, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.segment {
+  background: url("../Images/LCD.png") no-repeat;
+  -moz-background-size: 70%;
+  -ms-background-size: 70%;
+  -o-background-size: 70%;
+  background-size: 70%;
+  height: 55vh;
+  background-color: white !important; }
+
+/* line 138, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.banner-bottom {
+  margin-top: 5%;
+  height: auto; }
+
+/* line 143, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+.animate {
+  animation: slideIn 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(15%); } }
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(15%); } }
+
+@media screen and (max-height: 736px) and (max-width: 414px) {
+  /* line 171, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .header {
+    margin-top: 3%;
+    font-size: 45px; }
+  /* line 176, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/index.scss */
+  .segment {
+    height: 20vh;
+    width: 100%; } }
+
+/* line 4, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar-inverse {
+  background-color: #404040 !important; }
+  /* line 6, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+  .navbar-inverse li a, .navbar-inverse .navbar-brand {
+    color: white !important;
+    letter-spacing: 1px; }
+
+/* line 13, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar-inverse .navbar-nav li > a:hover {
+  background-color: gray !important;
+  color: white;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
+
+/* line 19, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+  border: none !important; }
+
+/* line 25, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+/* line 32, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix a {
+  padding: 15px !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+/* line 37, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix-top a {
+  color: #404040 !important;
+  padding: 25px !important; }
+
+/* line 41, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/navbar.scss */
+.affix + .container-fluid {
+  padding-top: 50px; }
+
+/* line 4, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif !important; }
+  /* line 8, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+  body p, html p {
+    font-size: 18px; }
+
+/* line 13, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+.header {
+  margin-top: -20px;
+  color: white !important;
+  background-color: #00878F !important;
+  height: 200px !important; }
+
+/* line 27, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+.btn-info {
+  color: white !important;
+  background-color: #00878F !important;
+  padding: 10px !important;
+  -webkit-transition: 550ms;
+  -o-transition: 550ms;
+  -moz-transition: 550ms;
+  transition: 550ms; }
+  /* line 34, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+  .btn-info:hover {
+    background-color: #62AEB2 !important; }
+
+/* line 39, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+.row {
+  margin-top: 3%; }
+  /* line 42, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+  .row a:hover {
+    text-decoration: none; }
+  /* line 50, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+  .row .thumbnail img {
+    height: 200px; }
+
+/* line 56, /Users/brandon/Library/Mobile Documents/com~apple~CloudDocs/Websites/Brandon Portfolio/SCSS/microcontroller.scss */
+.info {
+  margin: 5%; }
+
+/*# sourceMappingURL=styles.css.map */

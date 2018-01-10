@@ -1,0 +1,116 @@
+@import "Variables/variables.scss";
+@import "Mixins/mixins.scss";
+
+.navbar-inverse {
+
+    li a, .navbar-brand  {
+        color: black !important;
+        letter-spacing: 1px;
+    } 
+
+    background-color: transparent !important;
+    
+    .navbar-collapse {
+      height: 460px;
+    }
+}   
+
+.navbar-inverse .navbar-nav  li > a {
+    margin:0;
+    padding:0;
+    border: 0 none;
+    position: relative;
+    outline: none;
+    color: #333;
+    text-decoration: none;
+    z-index: 1;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.35s ease-in-out;
+    }
+
+    &:hover:before, &:focus:before {
+        visibility: visible;
+        background-color: black; /* NEED THIS THERE TO SHOW LINE HAHA */
+        transform: scaleX(1);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.navbar-toggle {
+    
+    background-color: transparent!important;
+    
+    &:hover {
+        background-color: transparent!important;
+    }
+
+    .icon-bar {
+        background-color: black !important;
+    }
+}
+
+li.active a {
+    background-color: transparent !important;
+    border-bottom: 2px solid black !important;
+}
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1000;
+    border: none !important;
+}
+
+
+.affix {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: $nav-bar-color !important;
+    color: white !important;
+    -webkit-transition: all .5s ease-in-out; 
+    transition: all .5s ease-in-out; 
+    
+
+    li a, .navbar-brand {
+        color: white !important;
+    }
+
+    .navbar-toggle {    
+        border: 1px solid white !important;
+        .icon-bar {
+	       background-color: white !important;
+        }
+    }
+    
+    li.active a {
+        background-color: transparent !important;
+        border-bottom: 3px solid #1affc6 !important;
+        margin-bottom: 1px;
+    }
+}
+
+.affix a {
+    padding: 15px !important;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; 
+}
+
+.affix-top a {
+    padding: 25px !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 400px; 
+}

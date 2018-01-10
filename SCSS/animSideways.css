@@ -1,0 +1,68 @@
+.slideleft{visibility: hidden;}
+.slideright{visibility: hidden;}
+
+.slideInLeft{
+    animation-name: slidefromleft;
+    -webkit-animation-name: slidefromleft;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+.slideInRight{
+    animation-name: slidefromright;
+    -webkit-animation-name: slidefromright;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity and specify the percentage from when to slide in the element along the Y-axis*/
+@keyframes slidefromleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    } 
+}
+
+@-webkit-keyframes slidefromleft {
+    
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slidefromright {
+    0% {
+        opacity: 0;
+        transform: translateX(70%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    } 
+}
+
+@-webkit-keyframes slidefromright {
+    
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+

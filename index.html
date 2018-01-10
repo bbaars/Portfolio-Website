@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brandon Baars Portfolio</title>
+
+
+    <!--GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+    <!-- 7 SEGMENT FONT -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="SCSS/index.css">
+    <link rel="stylesheet" type="text/css" href="SCSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="SCSS/anim.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Tab Image -->
+    <link rel="icon" href="Images/integratedcircuit.png">
+
+    <!-- META TYPE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "keywords" content = "Brandon, Baars, Brandon Baars, Portfolio,brandonbaars, brandon baars, portfolio">
+    <meta name = "author" content = "Brandon Baars">
+    <meta name = "description" content = "Brandon Baars Portfolio">
+
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91249309-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+     <!-- Inline CSS based on choices in "Settings" tab -->
+        <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: 'Open Sans', sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+</head>
+
+<body onload="startAnimation()">
+    <!-- NAV BAR -->
+    <div class="navbar navbar-inverse" data-spy="affix" data-offset-top="400">
+        <div class="container">
+            <a class="navbar-brand home-button" href="#home">Brandon Baars</a>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active home-element"><a href="#home" class = "home-button"> <span class = "glyphicon glyphicon-home" style = "font-size:18px"></span></a></li>
+                    <li class="about-element"><a href="#about" class="about-button">About</a></li>
+                    <li class="project-element"><a href="#projects" class="projects-button">Projects</a></li>
+                    <li class="skills-element"><a href="#skills" class="skills-button">Skills</a></li>
+                    <li class="contact-element"><a href="#contact" class="contact-button">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END OF NAV BAR -->
+
+    <!-- BEGINNING OF CONTENT -->
+    <div class="bg-img1 parallax" id = "home">
+        <div class="row text-center">
+            <h1>
+                <span class="header" id="header"></span><span id="cursor">|</span>
+            </h1>
+            <br><br><br>
+            <a href="#projects" class="learn-more-button"><span><strong>My Projects</strong></span></a>
+        </div>
+    </div>
+
+
+    <div class="jumbotron banner text-center">
+        <h1 class="banner-header"><em>"We are changing the world with technology."</em></h1>
+        <h3 class="banner-header-under">-Bill Gates</h3>
+    </div>
+
+    <!-- Starting the about me section and projects -->
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <h2 id="about"><strong>About Me</strong></h2>
+                <hr>
+            </div>
+            <div class="col-md-6 col-offset-3">
+                <img src="Images/me.jpg" alt = "photo of brandon" class="portfolio-photo img-responsive">
+                <p class="about-me">I am a senior at Grand Valley State University, currently living in Grand Rapids, Michigan. I have a passion for all things technology and creative focused.
+
+                    <br><br> In my free time, I stay busy by teaching myself using books and online tutorials. I have learned HTML5, CSS3, Javscript, jQuery, and a bit of Angular JS. I am no master, but I have gotten to a point where I can easily pick up more about each of these topics.
+
+                    <br><br> Apart from web development, I have learned iOS programming starting at Swift 2, Swift 3, and now Apple's newly released Swift 4.
+
+                    <br><br> I love working with microcontrollers and sensors and being able to understand them on a transistor level, reading / writing registers, and designing circuits to make things work! I hope to get into IoT projects soon during my, not-so-free, free time.
+
+                    <br><br> I'll ocassionally put my projects and tutorials I have done on GitHub! <a href="http://github.com/bbaars" target="new">Check it out.</a>
+
+                    <br><br> Lets build something great together.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="banner-bottom">
+            <div class="row">
+                <div class="segment"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3" id="projects">
+                    <h2 class="about"><strong>Projects</strong></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h3><a href="https://github.com/bbaars/MovieDBiOS" target="new">FilmFo</a></h3>
+                    <p>FilmFo is an iPhone movie database app utilizing <a href="http://www.themoviedb.org" target="new">The Movie Database.</a> It allows the user to view Top Rated Movies, Actors, and TVShows. It has "cross reference" searching allowing the user to search for two or more actors to see a list of movies/tvshows they're in together. It also lets them search for something, and then search for the actor / characters within that media. (Let's say you're watching Game of Thrones and want to know who plays Jon Snow. You just search Game Of Thrones and Jon Snow, and it'll return Kit Harrington.) The app also lets you add a Movie or TV Show to your favorites / watchlist.
+                    </p>
+                    <br>
+                    <p>There also is a desktop version, that is written in <a href="https://github.com/bbaars/MovieDB" target="new">Java</a> and has the same functions as the iPhone version. </p>
+
+                    <!--                        <img src = "Images/FilmFoMacBook.jpg" class = "img-responsive">-->
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-responsive" alt="photo of iphone with app, FilmFo" src="Images/FilmFo.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h3><a href="http://www.icsnh3.com" target="new">Integrated Circuit Systems, Inc.</a></h3>
+                    <img src="Images/ICSResponsive.jpg" alt = "photo of computer with responsive webpage" class="img-responsive">
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <br><br><br><br>
+                    <p>Integrated Circuit Systems, Inc was the first professional website I did. It is also the company I am working for. It has 16 unique pages about everything the company does. It uses HTML5, CSS3, Javascript / jQuery, a little of Angular JS, and PHP for a contact form. It implements Bootstrap for a responsive grid layout as well as for the navigation bar. </p>
+                    <br>
+                    <p>It was a great learning experience and a good way to get started in Web Development. </p>
+                </div>
+            </div>
+
+            <div class="row text-center info">
+                <div class="col-md-12">
+                    <h2>Plus a few more personal / private projects in the works!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ending the about me section and projects -->
+
+    <!-- Thumbnail text with gray background -->
+    <div class="container-fluid">
+        <div class="row thumbnail-elements">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2><strong>LEARN</strong></h2>
+                <p><em>Research & Strategy</em></p>
+                <hr>
+                <p class="thumbnail-text">
+                    Researching for me plays a large role in my learning development. With the internet being so easily accessible, it becomes a great platform to view lots of information and to learn new topics. I strive to learn something new each day and some how apply it to a project or to come up with ideas of how I can implement it.
+                </p>
+            </div>
+
+            <div class="col-md-4 cols-sm-12 col-xs-12">
+                <h2><strong>EXPLORE</strong></h2>
+                <p><em>Learn New Techniques</em></p>
+                <hr>
+                <p class="thumbnail-text">
+                    I always do as much exploration on subjects as I can. When I want to learn more about UIKit in Swift, I'll read documentation, go to discussion boards, blogs, and read books on the subject. I belive with more knowledge on subjects, I can come up with betters ways of accomplishing the same tasks. With embedded systems, if there is a circuit I have found, I want to understand why it works and how I can use those foundational ideas to build upon in the future.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2><strong>DESIGN</strong></h2>
+                <p><em>Prototyping</em></p>
+                <hr>
+                <p class="thumbnail-text">
+                    With the technology of today and the tools developers can use, it becomes a lot easier to code and almost instantly see the outcome. Prototyping / Design becomes a lot easier when you can see changes update in real time. It helps with UI & UX, small logic changes, database request, and partial apps to show clients!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of container fluid -->
+
+    <!-- Start of the skills portion -->
+    <div class="container about" id = "skills">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <h2><strong>Skills</strong></h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 col-md-offset-3">
+                <div class = "skillbar clearfix" percent = "50%">
+                    <div class = "skillbar-title"><span>Swift</span></div>
+                    <div class = "skillbar-bar"></div>
+                    <div class = "skillbar-percent count">50</div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 col-md-offset-3">
+                <div class = "skillbar clearfix" percent = "75%">
+                    <div class = "skillbar-title"><span>C Programming</span></div>
+                    <div class = "skillbar-bar" style = "background-color: #A9B9C9"></div>
+                    <div class = "skillbar-percent count">75</div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 col-md-offset-3">
+                <div class = "skillbar clearfix" percent = "25%">
+                    <div class = "skillbar-title"><span>C++ Programming</span></div>
+                    <div class = "skillbar-bar" style = "background-color: #669BCD"></div>
+                    <div class = "skillbar-percent count">25</div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 col-md-offset-3">
+                <div class = "skillbar clearfix" percent = "50%">
+                    <div class = "skillbar-title"><span>Web Development</span></div>
+                    <div class = "skillbar-bar" style = "background-color: #D28CBB"></div>
+                    <div class = "skillbar-percent count">50</div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 col-md-offset-3">
+                <h3>Swift</h3>
+                <p>Even though I started getting familiar with Swift back when Swift first launced, it was always on the back burner of my priority list.
+                Since Swift 3 was launched, I have more learned more in-depth skills associated with it. This usually occurs during my off semesters from school.
+                There is always more to learn.</p>
+                <br>
+
+                <h3>C Programming</h3>
+                <p>I started learning C back in 2013. I have used a little bit of it continuously. I feel confident with the security issues associated with C.
+                I have also do extensive embedded C programming with microcontrollers.
+                </p>
+                <br>
+
+                <h3>C++ Programming</h3>
+                <p>I took an accelerated semester of C++. It was a Data Structures and Algorithms course. It was very insightful into how to create faster, more
+                reliable software. C++ is the plusplus of C. The class and data structures were a lot more "easy" to work with. I would like to learn more C++
+                for game development!</p>
+                <br>
+
+                <h3>Web Development</h3>
+                <p>In the Summer of 2016, I was asked to redo my companies website. From there I went home and took online classes on how to build websites from scratch. I have only
+                    been doing this for slightly over a year. There is still so much left to learn!</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of the skill container -->
+
+    <!-- Start of the skills portion -->
+    <div class="container about" id = "contact">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <h2><strong>Contact Me</strong></h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class = "col-md-6 col-sm-12 col-md-offset-3">
+
+        <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+            <div class="bootstrap-iso">
+                <div class="container contact-form">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <form method="post" name = "contact_form" action = "contact-handler.php">
+                                <div class="form-group ">
+                                    <label class="control-label " for="name">
+                                        Name
+                                    </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-user">
+                                            </i>
+                                        </div>
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="email" required>
+                                        Email
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-envelope">
+                                            </i>
+                                        </div>
+                                        <input class="form-control" id="email" name="email" placeholder="Email" type="text" required/>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="message">
+                                        Message
+                                        <span class="asteriskField">
+                                            *
+                                        </span>
+                                    </label>
+                                    <textarea class="form-control" cols="40" id="message" name="message" placeholder="Type your message here..." rows="10" required ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input class="button-submit" name="submit" type="submit" onclick="return emtpy()"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        This website was made by Brandon Baars :)
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/anim.js"></script>
+</body>
+
+</html>
